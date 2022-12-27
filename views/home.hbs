@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/home.css'>
+    <link rel='stylesheet' href='/stylesheets/header.css'>
+    <link rel='stylesheet' href='/stylesheets/footer.css'>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/811d89d010.js" crossorigin="anonymous"></script>
+    <title>{{title}}</title>
+    
+</head>
+<body>
+    
+{{>header}}
+    
+<!--start of image slideshow-->
+<div class="slideshow-container">
+    <div class="slides">
+        <img src="/images/home/slideshow-images/img1.jpg">
+    </div>
+    <div class="slides">
+        <img src="/images/home/slideshow-images/img2.jpg">
+    </div>
+    <div class="slides">
+        <img src="/images/home/slideshow-images/img3.jpg">
+    </div>
+    <div class="slides">
+        <img src="/images/home/slideshow-images/img4.jpg">
+    </div>
+    <div class="slideshow-dots">
+        <span class="dots"></span>
+    </div>
+</div>
+
+<div class="blueblock-wrapper">
+    <div class="blueblock-container">
+        <div class="blueblock-text">
+            <p>Library</p>
+        </div>
+    </div>
+</div>
+<!--end of image slideshow-->
+
+<!--start of home content-->
+<div class="home-container">
+    <div class="library-quote-container" id="library-quote-container">
+        <div class="library-quote-wrapper">
+            <div class="library-quote-text">
+                <p>
+                    <span class="library-quote-icon-left" >
+                        <i class="fas duotone fa-quote-left"></i>
+                    </span>
+                    Libraries store the energy that fuels the imagination. They open up windows to the world and inspire us to explore and achieve, and contribute to improving our quality of life. 
+                    <span class="library-quote-icon-right">
+                        <i class="fas duotone fa-quote-right"></i>
+                    </span>
+                </p>
+            </div>
+            <div class="library-quote-subtext">
+                <p>- Sidney Sheldon (1917-2007)</p>
+                <i class="fas duotone fa-arrow-up-right"></i>
+            </div>
+        </div>
+    </div>
+    <div class="home-library">
+        <div class="library-text reveal">
+            <h1>Central Library</h1>
+            <p>
+                The Central Library of our Institute stands as an epitome of intellectual
+                elegance and a repository of Engineering and Technology, Medicine, Science and
+                Humanities, Hotel Management and Allied Health Sciences. The Learning Centre of
+                the institute plays a pivotal role in the process of promoting and demonstrating a
+                desire for information, knowledge, and understanding among the students, and so
+                aiding them in the development of their professional, personal, and spiritual lives.
+                The Central Library inspires and supports students, faculty, researchers, and staff in
+                all facets of their pursuits to dream, learn, create, and share knowledge and provides
+                access to a wide array of technical ideas and information. <!--<div class="home-viewmore">
+                <p><i class="fas fa-arrow-right"></i> more info..</p>
+                </div>-->
+            </p>
+        </div>
+        <div class="library-image reveal">
+            <img src="/images/img2_border.jpg">
+        </div>
+    </div>
+    <div class="home-digital-library ">
+        <div class="digital-library-image reveal">
+            <img src="/images/home/slideshow-images/img4.jpg">
+        </div>
+        <div class="digital-library-text reveal">
+            <h1>Digital Library</h1>
+            <p>
+                Library provides the computer systems to access  the subscribed E-Databases, E-Journals, E-Books, other e- resources and internet browsing for
+                students and staff community. Users can access for educational, research and
+                development purpose. Non-book materials such as CDs, DVDs, text book tutorial CDs
+                and periodical’s CDs are also kept in the Library. Frequent updating of the collection
+                and fully computerized systems go towards endearing the Centre to the students. In
+                this regard, a digital library has been established with 25 computer systems with
+                internet facility. 
+                <!--<div class="home-viewmore">
+                <p><i class="fas fa-arrow-right"></i> more info..</p>
+                </div>-->
+            </p>
+        </div>
+    </div>
+    <div class="home-resources reveal">
+        <div class="resources-text">
+            <h1>Resources</h1>
+            <p>The Library has an impressive collection of Standard & University prescribed text and reference books. Based on student needs & faculty recommendation, multiple copies of text books are bought and made available.</p>
+        </div>
+        <div class="resources-cards">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga neque deserunt amet minus et, reiciendis.</p>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--end of home content-->
+
+{{>footer}}
+
+<script src="/javascripts/default.js"></script>
+<script src="/javascripts/home.js"></script>
+
+</body>
+</html>

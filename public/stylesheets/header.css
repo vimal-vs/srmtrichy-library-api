@@ -1,0 +1,192 @@
+@import url("variables.css");
+
+body::-webkit-scrollbar{
+  width: 12px;
+  height: 12px;
+}
+body::-webkit-scrollbar-thumb{
+  background: rgb(127, 127, 148);
+  border-radius: 0.1em;
+}
+
+/*start of navbar*/
+@keyframes transitionIn {
+  from{
+      transform: translateY(-40px);
+  }
+  to{
+      transform: translateY(0px);
+  } 
+}
+.navbar-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  position: sticky;
+  top: 0;
+  opacity: 0;
+  background-color: var(--primary-white);
+  animation: transitionIn 1.5s;
+  height: 6em;
+}
+.navbar-srmlogo{
+  padding-top: 0.3em;
+  height: 6em;
+}
+.navbar-container-logo p{
+  transform: translateY(-1.3em);
+  font-family: var(--primary-font);
+  margin-top: 0.2em;
+  margin-left: 0.3em;
+}
+.navbar-list{
+  display: flex;
+  flex-direction: row;
+  padding-right: 1em;
+}
+.nav-list-element{
+  font-family: var(--primary-font);
+  font-size: 1rem;
+  list-style: none;
+  justify-content: center;
+}
+.nav-list-element a{
+  padding: 1em;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+.nav-list-element  a.active{
+  background: var(--secondary-color);
+}
+.nav-list-element a:hover {
+  transition: background-color 0.4s;
+  background:var(--secondary-color);
+}
+.nav-list-sub-arrow {
+  padding-left: 0.25em;
+}
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--secondary-color);
+}
+.list-element-about-submenu{
+  display: none;
+  list-style: none;
+  background-color: var(--primary-white);
+  position: absolute;
+  top: 4.6em;
+  width: 12em;
+  cursor: pointer;
+  border-radius: 0.2em;
+}
+.list-element-about-submenu li{
+  display: block;
+  padding: 1em;
+}
+.list-element-about-submenu li:hover{
+  transition: background-color 0.4s;
+  background-color: var(--secondary-black);
+  color: var(--primary-white);
+}
+.list-element-about-submenu li a{
+  padding: 0em;
+}
+.navbar-list li:hover .list-element-about-submenu{
+  display: block;
+}
+.progress-container {
+  z-index: 1;
+  width: 100%;
+  height: 0.3em;
+  position: fixed;
+  top: 5.85em;
+  animation: transitionIn 2s;
+  pointer-events: none;
+}
+.progress-bar {
+  height: 0.3em;
+  background: var(--secondary-color);
+  width: 0;
+  opacity: 0;
+}
+.scroll{
+  overflow-y: hidden;
+}
+.reveal{
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+/*end of navbar*/
+
+@media(prefers-reduced-motion) {
+  .reveal{
+    transition: none;
+  }
+}
+
+/*start of media queries -> MOBILE DEVICES*/
+@media(max-width: 890px){
+  body{
+      overflow-x: hidden;
+  }
+  /*start of navbar*/
+  .navbar-list{
+      z-index: 1;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      position: fixed;
+      left: -100%;
+      top: 6em;
+      background-color: #fff;
+      width: 100%;
+      height: 100vh;
+      text-align: center;
+      transition: 0.3s;
+      overflow: hidden;
+  }
+  .nav-list-element{
+      padding-top: 5em;
+  }
+  .navbar-list.active{
+      left: 0;
+  }
+  .hamburger{
+      display: block;
+      padding-right: 1em;
+  }
+  .hamburger.active .bar:nth-child(2){
+      opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3){
+      transform: translateY(-8px) rotate(-45deg);
+  } 
+  .list-element-about-submenu{
+    position: relative;
+    top: 1em;
+    border: 1.2px solid var(--secondary-color);
+  }
+  .list-element-about-submenu{
+    position: relative;
+  }
+/*end of navbar*/
+}

@@ -1,0 +1,52 @@
+@import url("variables.css");
+
+.blueblock-container{
+    position:absolute;
+    top: 34em;
+    background-color: var(--secondary-blue);
+    width: 250px;
+    height: 100px;
+    margin-left: 70px;
+    cursor: default;
+}
+.blueblock-text{
+    display: flex;
+    color: var(--primary-white);
+    font-family: var(--secondary-font);
+    font-size: 2.6rem;
+    justify-content: flex-start;
+    padding-left: 1em;
+    padding-top: 0.3em;
+}
+.contact-image img{
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+.contact-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 4em;
+    margin-bottom: 4em;
+    width: 50%;
+    height: 50vh;
+    background-color: var(--footer-primary);
+    text-align: center;
+    border-radius: 0.4em;
+    align-items: center;
+}
+.contact-header{
+    font-family: var(--secondary-font);
+    font-size: 1.4rem;
+    text-decoration: underline var(--secondary-color);
+    letter-spacing: 0.1em;
+}
+.contact-text{
+    font-family: var(--primary-font);
+    padding-top: 2em;
+    line-height: 2em;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/ask-a-librarian.css'>
+    <link rel='stylesheet' href='/stylesheets/header.css'>
+    <link rel='stylesheet' href='/stylesheets/footer.css'>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/811d89d010.js" crossorigin="anonymous"></script>
+    <title>{{title}}</title>
+</head>
+<body>
+{{>header}}
+<section id="ask-a-librarian">
+    <div class="ask-a-librarian-wrapper">
+        <div class="ask-a-librarian-header-image">
+            <img src="/images/contact-us.jpg">
+        </div>
+        <div class="blueblock-wrapper">
+            <div class="blueblock-container">
+                <div class="blueblock-text">
+                    <p>Ask a librarian</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container">
+  <form action="/action_page.php">
+    <label for="name">Name</label>
+    <input type="text" id="userName" name="name" placeholder="Your name.." required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="Your email.." required>
+
+    <label for="name">Staff Name</label>
+    <input type="name" id="staffName" name="name" placeholder="Staff name" required>
+    
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Your subject.." required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+{{>footer}}
+    
+<script src="/javascripts/default.js"></script>
+
+</body>
+</html>

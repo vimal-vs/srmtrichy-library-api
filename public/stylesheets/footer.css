@@ -1,0 +1,112 @@
+@import url("variables.css");
+
+/*start of end-content*/
+.end-container{
+  width: 100%;
+  height: 25em;
+  background-color: #e7e7e7;
+  font-family: var(--primary-font);
+}
+.end-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.end-quick-links{
+  padding-top: 2em;
+  cursor: default;
+}
+.end-quick-links ul{
+  padding-top: 1em;
+}
+.end-quick-links ul li{
+  list-style: none;
+  padding-top: 1em;
+}
+.end-quick-links ul li a{
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--primary-black);
+}
+.end-quick-links ul li a:hover{
+  color: var(--secondary-blue);
+  font-weight: 600;
+}
+.end-address{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 1em;
+}
+.end-address-text p{
+  font-size: 1rem;
+  line-height: 2em;
+}
+.end-address-text a{
+  font-size: 1rem;
+  line-height: 2em;
+  text-decoration: none;
+  color: var(--primary-black); 
+  font-weight: bold;
+}
+.end-address-logo img{
+  height: 5em;
+  transform: translateX(-15px);
+}
+/*end of end-content*/
+
+/*start of footer*/
+.footer-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--footer-primary);
+  height: 5em;
+  width: 100%;
+}
+.footer-text{
+  padding-left: 1em;
+  font-family: var(--primary-font);
+  color: var(--footer-font-color);
+  padding-right: 2em;
+  cursor: default;
+}
+.footer-text p a{
+  text-decoration: none;
+  color: var(--footer-font-color);
+}
+.scroll-to-top{
+  padding-right: 0.5em;
+  bottom: 0.6em;
+  right: 0.5em;
+  position: fixed;
+  opacity: 0;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+.scroll-to-top i{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--footer-font-color);
+  border-radius: 1em;
+  transition: all .3s;
+}
+.scroll-to-top i:hover{
+  font-size: 1.8rem;
+}
+.scroll-to-top.active{
+  opacity: 1;
+  pointer-events: auto;
+}
+/*end of footer*/
+
+/*start of media queries -> MOBILE DEVICES*/
+@media(max-width: 890px){
+  .footer-text{
+      font-size: 0.9rem;
+  }
+}

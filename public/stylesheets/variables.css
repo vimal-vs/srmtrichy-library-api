@@ -1,0 +1,19 @@
+:root{
+    --primary-font:'Work Sans';
+    --secondary-font:'Poppins';
+    --primary-black:#000;
+    --secondary-black:#292929;
+    --primary-white:#fff;
+    --secondary-color:#FFC53A;
+    --secondary-blue:#302f7e;
+    --footer-primary:#f0f0f0;
+    --footer-font-color:rgb(102, 101, 101);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
