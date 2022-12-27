@@ -92,7 +92,7 @@
     background-color: var(--footer-primary);
     color: var(--primary-black);
     height: 400px;
-    width: 350px;
+    width: 300px;
     min-width: 300px;
     border-radius: 0.5em;
     border: 2.5px solid rgb(201, 201, 201);
@@ -102,10 +102,10 @@
     transform: translateY(-1rem);
 }
 .resource:hover~.resource{
-    transform: translateX(185px);
+    transform: translateX(150px);
 }
 .resource:not(:first-child){
-    margin-left: -200px;
+    margin-left: -160px;
 }
 .resource-content-text{
     display: flex;
