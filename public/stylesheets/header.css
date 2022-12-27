@@ -51,6 +51,7 @@ body::-webkit-scrollbar-thumb{
   font-size: 1rem;
   list-style: none;
   justify-content: center;
+  z-index: 2;
 }
 .nav-list-element a{
   padding: 1em;

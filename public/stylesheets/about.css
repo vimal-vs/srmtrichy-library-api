@@ -23,6 +23,7 @@
   height: 400px;
   width: 100%;
   transform: translateY(-40px);
+  object-fit: cover;
 }
 .about-container{
   background-color: var(--footer-primary);
@@ -43,19 +44,22 @@
   color: var(--primary-black);
 }
 #vision-mission{
-  margin: 3em 1em 0 1em;
   font-family: var(--primary-font);
 }
 .vision-wrapper,.mission-wrapper{
-  margin-top: 1em;
-  margin-bottom: 1em;
+  padding: 2em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
 }
 .vision-header,.mission-header{
   font-family: var(--secondary-font);
   border-bottom: 1px solid var(--secondary-color);
 }
 .vision-list ul,.mission-list ul{
-  width: 70%;
   list-style: none;
 }
 .vision-list ul li{
@@ -77,6 +81,7 @@
 .library-services-wrapper{
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-top: 2em;
 }
 .library-services-header{
@@ -84,6 +89,11 @@
 }
 .library-services-text{
   padding-top: 1.5em;
+  width: 50%;
+  line-height: 1.6em;
+}
+.library-services-list{
+  width: 50%;
 }
 .library-services-list ul{
   padding-top: 1em;
@@ -104,25 +114,25 @@
 }
 .resources-wrapper{
   margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .resources-header{
-  margin-left: 1em;
   border-bottom: 1px solid var(--secondary-color);
 }
 .resources-text{
   padding-top: 1.5em;
-  width: 70%;
-  margin-left: 1em;
+  width: 50%;
   line-height: 1.5em;
 }
 .resources-table-container{
-  margin: 1em;
+  margin-top: 2em;
 }
 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 60%;
-  font-family: var(--primary-font);
+  min-width: 600px;
 }
 th{
   background-color: var(--secondary-blue);
@@ -141,15 +151,17 @@ td, th {
 }
 .membership-details-wrapper{
   margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .membership-details-header{
-  margin-left: 1em;
   border-bottom: 1px solid var(--secondary-color);
 }
 .membership-details-text{
   padding-top: 1.5em;
-  width: 70%;
-  margin-left: 1em;
+  width: 50%;
   line-height: 1.5em;
 }
 .membership-details-table-container{
