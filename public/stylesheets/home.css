@@ -50,6 +50,8 @@
 .blueblock-container{
   position: static;
   background-color: var(--secondary-blue);
+  font-family: var(--blueblock-font);
+  font-weight: var(--blueblock-font-weight);
   width: 300px;
   height: 120px;
   margin-left: 100px;
@@ -59,7 +61,6 @@
 .blueblock-text{
   display: flex;
   color: var(--primary-white);
-  font-family: var(--secondary-font);
   font-size: 3rem;
   justify-content: flex-start;
   padding-left: 1em;

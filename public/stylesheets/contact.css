@@ -4,7 +4,7 @@
     position:absolute;
     top: 29em;
     background-color: var(--secondary-blue);
-    width: 250px;
+    width: 260px;
     height: 100px;
     margin-left: 70px;
     cursor: default;
@@ -12,11 +12,12 @@
 .blueblock-text{
     display: flex;
     color: var(--primary-white);
-    font-family: var(--secondary-font);
+    font-family: var(--blueblock-font);
+    font-weight: var(--blueblock-font-weight);
     font-size: 2.6rem;
     justify-content: flex-start;
     padding-left: 1em;
-    padding-top: 0.3em;
+    padding-top: 0.4em;
 }
 .contact-header-image img{
     height: 500px;

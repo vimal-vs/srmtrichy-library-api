@@ -8,6 +8,9 @@
     --secondary-blue:#302f7e;
     --footer-primary:#f0f0f0;
     --footer-font-color:rgb(102, 101, 101);
+
+    --blueblock-font:"Work Sans";
+    --blueblock-font-weight: 800;
 }
 *{
     padding: 0;

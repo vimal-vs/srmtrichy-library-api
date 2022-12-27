@@ -10,6 +10,8 @@
     top: 28em;
     position:absolute;
     background-color: var(--secondary-blue);
+    font-family: var(--blueblock-font);
+    font-weight: var(--blueblock-font-weight);
     width: 300px;
     height: 100px;
     margin-left: 70px;
@@ -21,7 +23,7 @@
     font-size: 2rem;
     justify-content: flex-start;
     padding-left: 1.5em;
-    padding-top: 0.5em;
+    padding-top: 0.7em;
     font-weight: 600;
 }
 .resources-container{
