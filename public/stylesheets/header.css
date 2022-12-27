@@ -12,7 +12,7 @@ body::-webkit-scrollbar-thumb{
 /*start of navbar*/
 @keyframes transitionIn {
   from{
-      transform: translateY(-40px);
+      transform: translateY(-50px);
   }
   to{
       transform: translateY(0px);

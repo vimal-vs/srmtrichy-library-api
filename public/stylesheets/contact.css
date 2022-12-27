@@ -2,7 +2,7 @@
 
 .blueblock-container{
     position:absolute;
-    top: 34em;
+    top: 29em;
     background-color: var(--secondary-blue);
     width: 250px;
     height: 100px;
@@ -18,35 +18,55 @@
     padding-left: 1em;
     padding-top: 0.3em;
 }
-.contact-image img{
+.contact-header-image img{
     height: 500px;
     width: 100%;
     object-fit: cover;
+    transform: translateY(-4em);
+}
+#contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .contact-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin: auto;
-    margin-top: 4em;
+    margin-top: 8em;
     margin-bottom: 4em;
-    width: 50%;
-    height: 50vh;
-    background-color: var(--footer-primary);
-    text-align: center;
-    border-radius: 0.4em;
-    align-items: center;
+    width: 600px;
+    height: 60vh;
+    background-color: var(--secondary-blue);
+    color: #fff;
+    text-align: start;
+    padding-left: 3em;
 }
 .contact-header{
-    font-family: var(--secondary-font);
+    font-family: var(--primary-font);
     font-size: 1.4rem;
-    text-decoration: underline var(--secondary-color);
-    letter-spacing: 0.1em;
 }
 .contact-text{
-    font-family: var(--primary-font);
-    padding-top: 2em;
-    line-height: 2em;
-    font-size: 1.2rem;
+    font-family: var(--secondary-font);
+    padding-top: 1em;
+    line-height: 2.2em;
+    font-size: 1rem;
+}
+.contact-text a{
+    color: #fff;
+    text-decoration: none;
+}
+.contact-image{
+    position: relative;
+    top: 1em;
+    left: -2em;
+}
+.contact-image img{
+    width: 650px;
+    height: 450px;
+    border-radius: 0.3em;
+}
+.contact-further-information{
+    padding-top: 3em;
 }

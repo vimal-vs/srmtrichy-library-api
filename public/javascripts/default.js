@@ -1,5 +1,5 @@
 //navbar animation
-setTimeout(navLoad,400);
+setTimeout(navLoad,500);
 function navLoad(){
   const navLoader = document.getElementById("navbar-container");
   const navProgressBar = document.querySelector(".progress-bar");
