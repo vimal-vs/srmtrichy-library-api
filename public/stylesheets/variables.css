@@ -1,3 +1,9 @@
+/*poppins regular-400*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/*work-sans regular-400*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+
 :root{
     --primary-font:'Work Sans';
     --secondary-font:'Poppins';

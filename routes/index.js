@@ -15,14 +15,17 @@ router.get('/e-resources', function(req, res, next) {
 router.get('/about', function(req, res, next) {
   res.render('about', { title: 'Library | About' });
 });
+
 /* GET Remote Access page. */
-router.get('/Remote Access', function(req, res, next) {
-  res.redirect('');
-});
+// router.get('/remote-access', function(req, res, next) {
+//   res.render('remote-access', { title: 'Library | Remote Access' });
+// });
+
 /* GET ask-a-librarian page. */
 router.get('/ask-a-librarian', function(req, res, next) {
   res.render('ask-a-librarian', { title: 'Library | Ask a librarian' });
 });
+
 /* GET contact page. */
 router.get('/contact', function(req, res, next) {
   res.render('contact', { title: 'Library | Contact' });
