@@ -35,10 +35,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 6em;
-    margin-bottom: 8em;
+    margin: 4em;
     width: 600px;
-    height: 60vh;
+    height: 650px;
     background-color: var(--secondary-blue);
     color: #fff;
     text-align: start;
@@ -61,7 +60,7 @@
 .contact-image{
     position: relative;
     top: -1em;
-    left: -3em;
+    left: -6.5em;
 }
 .contact-image img{
     width: 650px;

@@ -102,6 +102,13 @@
   opacity: 1;
   pointer-events: auto;
 }
+.fade{
+  opacity: 0;
+  transition: all 1.5s ease;
+}
+.fade.active{
+  opacity: 1;
+}
 /*end of footer*/
 
 /*start of media queries -> MOBILE DEVICES*/

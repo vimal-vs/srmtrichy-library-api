@@ -10,14 +10,6 @@ body::-webkit-scrollbar-thumb{
 }
 
 /*start of navbar*/
-@keyframes transitionIn {
-  from{
-      transform: translateY(-50px);
-  }
-  to{
-      transform: translateY(0px);
-  } 
-}
 .navbar-container{
   display: flex;
   flex-direction: row;
@@ -135,11 +127,6 @@ body::-webkit-scrollbar-thumb{
 }
 /*end of navbar*/
 
-@media(prefers-reduced-motion) {
-  .reveal{
-    transition: none;
-  }
-}
 
 /*start of media queries -> MOBILE DEVICES*/
 @media(max-width: 890px){

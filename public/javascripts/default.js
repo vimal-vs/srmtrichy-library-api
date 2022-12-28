@@ -32,7 +32,9 @@ const observer = new IntersectionObserver((entries) =>{
 });
 
 const hiddenElements = document.querySelectorAll('.reveal');
+const hiddenElements2 = document.querySelectorAll('.fade');
 hiddenElements.forEach((element) => observer.observe(element));
+hiddenElements2.forEach((element) => observer.observe(element));
 
 
 //scroll-to-top animation

@@ -26,3 +26,39 @@
 html{
     scroll-behavior: smooth;
 }
+
+@keyframes fadeIn{
+    from {opacity : .8}
+    to {opacity : 1}
+}
+
+@keyframes slideUp{
+    from{
+      transform: translateY(80px);
+      opacity: 0;
+    }
+    to{
+      transform: translateY(0px);
+      opacity: 1;
+    }
+}
+
+@keyframes slideIn{
+    from{ transform: translateX(20px); }
+    to{ transform: translateX(0px); }
+}
+
+@keyframes transitionIn {
+    from{
+        transform: translateY(-50px);
+    }
+    to{
+        transform: translateY(0px);
+    } 
+}
+
+@media(prefers-reduced-motion) {
+    .reveal{
+      transition: none;
+    }
+  }
