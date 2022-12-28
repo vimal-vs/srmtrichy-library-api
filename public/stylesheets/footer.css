@@ -141,4 +141,11 @@
     height: 4em;
     transform: translateX(-15px);
   }
+  .scroll-to-top{
+    bottom: 0.1em;
+    right: 0.1em;
+  }
+  .scroll-to-top i:hover{
+    font-size: 1.2rem;
+  }
 }

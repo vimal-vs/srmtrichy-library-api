@@ -96,15 +96,37 @@
 }
 @media(max-width: 890px){
     #contact{
-        flex-direction: column;
+        flex-direction: column-reverse;
+    } 
+    .contact-wrapper{
+        width: 350px;
+        height: 400px;
+        padding-left: 3em;
+        position: relative;
+        left: 2em;
+        animation: fadeIn-image 1s;
     }
     .contact-image{
         position: relative;
-        top: -7em;
-        left: 0;
+        top: 3em;
+        left: -1em;
     }
     .contact-image img{
-        width: 400px;
+        width: 350px;
+        height: 250px;
+        animation: slideIn 1s;
+    }
+    .blueblock-container{
+        width: 200px;
+        height: 80px;
+        top: 16em;
+    }
+    .blueblock-text{
+        font-size: 2rem;
+        padding-left: 1em;
+        padding-top: 0.3em;
+    }
+    .contact-header-image img{
         height: 300px;
     }
 }
