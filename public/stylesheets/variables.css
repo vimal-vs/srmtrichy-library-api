@@ -1,7 +1,7 @@
 /*poppins regular-400*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/*work-sans regular-400*/
+/*work-sans medium-500*/
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
 
 :root{
@@ -10,11 +10,12 @@
     --primary-black:#000;
     --secondary-black:#292929;
     --primary-white:#fff;
-    --secondary-color:#FFC53A;
+    --secondary-yellow:#FFC53A;
     --secondary-blue:#302f7e;
     --footer-primary:#f0f0f0;
     --footer-font-color:rgb(102, 101, 101);
 
+    --nav-box-shadow-color:rgb(206, 204, 204);
     --blueblock-font:"Work Sans";
     --blueblock-font-weight: 800;
 }
@@ -68,8 +69,12 @@ html{
 }
 
 @keyframes fadeIn-image{
-    from {opacity : 0}
-    to {opacity : 1}
+    from{
+        opacity : 0
+    }
+    to{
+        opacity : 1
+    }
 }
 
 @media(prefers-reduced-motion){

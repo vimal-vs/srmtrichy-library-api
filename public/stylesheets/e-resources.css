@@ -42,7 +42,7 @@
     font-family: var(--secondary-font);
     font-size: 2rem;
     margin-left: 1em;
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-yellow);
 }
 .ebooks-container{
     display: flex;
@@ -65,7 +65,7 @@
     font-family: var(--secondary-font);
     font-size: 2rem;
     margin-left: 1em;
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-yellow);
 }
 .ejournals-container{
     display: flex;
@@ -88,7 +88,7 @@
     font-family: var(--secondary-font);
     font-size: 2rem;
     margin-left: 1em;
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-yellow);
 }
 .research-database-container{
     display: flex;

@@ -17,9 +17,9 @@ router.get('/about', function(req, res, next) {
 });
 
 /* GET Remote Access page. */
-// router.get('/remote-access', function(req, res, next) {
-//   res.render('remote-access', { title: 'Library | Remote Access' });
-// });
+router.get('/remote-access', function(req, res, next) {
+res.render('remote-access', { title: 'Library | Remote Access' });
+});
 
 /* GET ask-a-librarian page. */
 router.get('/ask-a-librarian', function(req, res, next) {

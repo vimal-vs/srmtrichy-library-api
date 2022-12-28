@@ -1,0 +1,99 @@
+@import url("variables.css");
+
+.remote-access-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+}
+.remote-access-container{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+    margin-top: 4em;
+    margin-left: 2em;
+    margin-bottom: 5em;
+}
+.remote-access-header-wrapper{
+    display: flex;
+}
+.remote-access-image{
+    margin-left: 4em;
+    margin-top: -0.4em
+}
+.remote-access-image img{
+    height: 80px;
+}
+.remote-access-header{
+    font-family: var(--secondary-font);
+    text-decoration: underline var(--secondary-yellow);
+}
+.remote-access-text{
+    font-family: var(--primary-font);
+    line-height: 2em;
+    padding-top: 1em;
+    width: 40vw;
+}
+.remote-access-text p{
+    padding-top: 2em;
+}
+.remote-access-text p:hover{
+    transform: translateX(0.1em);
+    transition: all 0.2s;
+}
+.remote-access-timer-wrapper{
+    display: flex;
+}
+.remote-access-timer{
+    padding: 2em;
+    background-color: var(--secondary-blue);
+    color: #fff;
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    margin-left: 2em;
+}
+.remote-access-timer p:nth-child(2){
+    margin-top: 1em;
+}
+.timer{
+    font-size: 2rem;
+}
+.remote-access-timer p:nth-child(3){
+    margin-top: 0.5em;
+}
+.remote-access-timer a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+@media(max-width: 890px){
+    .remote-access-wrapper{
+        flex-direction: column;
+        width: auto;
+    }
+    .remote-access-text{
+        width: auto;
+    }
+    .remote-access-timer{
+        padding: 1em;
+        margin-left: 0;
+        margin-bottom: 4em;
+        margin-top: -3em;
+    }
+    .remote-access-header-wrapper{
+        flex-direction: column-reverse;
+    }
+    .remote-access-image{
+        margin-left: 0;
+        margin-bottom: 1em;
+    }
+    .remote-access-text{
+        line-height: 1.4em;
+        padding-top: 0.5em;
+    }
+    .remote-access-header{
+        font-size: 0.7rem;
+    }
+}

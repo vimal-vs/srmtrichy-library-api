@@ -22,6 +22,7 @@ body::-webkit-scrollbar-thumb{
   background-color: var(--primary-white);
   animation: transitionIn 1.5s;
   height: 6em;
+  box-shadow: 0.2em 0 0.2em 0 var(--nav-box-shadow-color);
 }
 .navbar-srmlogo{
   padding-top: 0.3em;
@@ -51,11 +52,11 @@ body::-webkit-scrollbar-thumb{
   color: var(--primary-color);
 }
 .nav-list-element  a.active{
-  background: var(--secondary-color);
+  background: var(--secondary-yellow);
 }
 .nav-list-element a:hover {
   transition: background-color 0.4s;
-  background:var(--secondary-color);
+  background:var(--secondary-yellow);
 }
 .nav-list-sub-arrow {
   padding-left: 0.25em;
@@ -71,7 +72,7 @@ body::-webkit-scrollbar-thumb{
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: var(--secondary-color);
+  background-color: var(--secondary-yellow);
 }
 .list-element-about-submenu{
   display: none;
@@ -109,7 +110,7 @@ body::-webkit-scrollbar-thumb{
 }
 .progress-bar {
   height: 0.3em;
-  background: var(--secondary-color);
+  background: var(--secondary-yellow);
   width: 0;
   opacity: 0;
 }
@@ -171,7 +172,7 @@ body::-webkit-scrollbar-thumb{
   .list-element-about-submenu{
     position: relative;
     top: 1em;
-    border: 1.2px solid var(--secondary-color);
+    border: 1.2px solid var(--secondary-yellow);
   }
   .list-element-about-submenu{
     position: relative;

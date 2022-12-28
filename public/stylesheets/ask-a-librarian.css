@@ -40,7 +40,7 @@
 }
 .ask-a-librarian-header i{
     font-size: 3rem;
-    color: var(--secondary-color);
+    color: var(--secondary-yellow);
 }
 .ask-a-librarian-form-container{
     display: flex;
@@ -94,12 +94,9 @@
 }
 .ask-a-librarian-form-submit-btn:hover{
     font-weight: 600;
-    background-color: var(--secondary-color);
+    background-color: var(--secondary-yellow);
     color: var(--primary-black);
     transition: all .1s;
-}
-@media (max-width: 1160px){
-    
 }
 @media(max-width: 890px){
     .blueblock-container{
