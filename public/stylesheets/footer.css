@@ -114,6 +114,31 @@
 /*start of media queries -> MOBILE DEVICES*/
 @media(max-width: 890px){
   .footer-text{
-      font-size: 0.9rem;
+      font-size: 0.8rem;
+  }
+  .end-container{
+    padding: 1em;
+  }
+  .end-wrapper{
+    justify-content: space-between;
+  }
+  .end-quick-links ul li a{
+    font-size: 0.8rem;
+    padding-top: 0;
+  }
+  .end-quick-links h3{
+    font-size: 1rem;
+  }
+  .end-address-text p{
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+  .end-address-text a{
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+  .end-address-logo img{
+    height: 4em;
+    transform: translateX(-15px);
   }
 }

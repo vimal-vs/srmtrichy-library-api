@@ -70,3 +70,41 @@
 .contact-further-information{
     padding-top: 3em;
 }
+
+@media (max-width: 1160px){
+    .contact-wrapper{
+        margin: 1em;
+        margin-bottom: 4em;
+        width: 400px;
+        height: 500px;
+        padding-left: 3em;
+    }
+    .contact-header{
+        font-size: 1.2rem;
+    }
+    .contact-text{
+        line-height: 1.5em;
+        font-size: 0.8rem;
+    }
+    .contact-image img{
+        width: 500px;
+        height: 350px;
+    }
+    .contact-further-information{
+        padding-top: 2em;
+    }
+}
+@media(max-width: 890px){
+    #contact{
+        flex-direction: column;
+    }
+    .contact-image{
+        position: relative;
+        top: -7em;
+        left: 0;
+    }
+    .contact-image img{
+        width: 400px;
+        height: 300px;
+    }
+}
