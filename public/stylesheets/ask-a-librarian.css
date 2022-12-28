@@ -38,6 +38,10 @@
 .ask-a-librarian-header p:nth-child(1){
     font-size: 3rem;
 }
+.ask-a-librarian-header i{
+    font-size: 3rem;
+    color: var(--secondary-color);
+}
 .ask-a-librarian-form-container{
     display: flex;
     flex-direction: column;
