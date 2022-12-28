@@ -26,15 +26,18 @@ document.querySelectorAll('nav a').forEach(link => {
 //nav-bar hamburger-icon animation
 const hamburger = document.querySelector('.hamburger');
 const navbar = document.querySelector('.navbar-list');
+// const body = document.getElementsByTagName("BODY")[0];
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
     navbar.classList.toggle('active');
+    // body.style.overflow = "hidden";
 });
 
 document.querySelectorAll('.navbar-list').forEach(n => n.addEventListener('click',() => {
     hamburger.classList.remove('active');
     navbar.classList.remove('active');
+    // body.style.overflow = "scroll";
 }));
 
 
@@ -63,3 +66,6 @@ window.addEventListener("scroll", () => {
     scrollToTop.classList.remove('active');
   }
 });
+
+
+//disable scroll on active-hamburger

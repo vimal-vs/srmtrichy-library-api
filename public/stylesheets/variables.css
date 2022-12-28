@@ -18,18 +18,24 @@
     --blueblock-font:"Work Sans";
     --blueblock-font-weight: 800;
 }
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 html{
     scroll-behavior: smooth;
 }
 
 @keyframes fadeIn{
-    from {opacity : .8}
-    to {opacity : 1}
+    from{
+        opacity : .8
+    }
+    to{
+        opacity : 1
+    }
 }
 
 @keyframes slideUp{
@@ -44,11 +50,15 @@ html{
 }
 
 @keyframes slideIn{
-    from{ transform: translateX(20px); }
-    to{ transform: translateX(0px); }
+    from{ 
+        transform: translateX(20px); 
+    }
+    to{ 
+        transform: translateX(0px); 
+    }
 }
 
-@keyframes transitionIn {
+@keyframes transitionIn{
     from{
         transform: translateY(-50px);
     }
@@ -56,13 +66,14 @@ html{
         transform: translateY(0px);
     } 
 }
+
 @keyframes fadeIn-image{
     from {opacity : 0}
     to {opacity : 1}
 }
 
-@media(prefers-reduced-motion) {
+@media(prefers-reduced-motion){
     .reveal{
       transition: none;
     }
-  }
+}

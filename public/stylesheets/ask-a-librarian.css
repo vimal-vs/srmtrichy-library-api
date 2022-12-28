@@ -27,18 +27,23 @@
 }
 .ask-a-librarian-header{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    font-family: var(--primary-font);
+    line-height: 1.8em;
+    font-family: var(--secondary-font);
     font-size: 2rem;
     margin-top: 2em;
-    text-transform: uppercase;
 }
-.container {
+.ask-a-librarian-header p:nth-child(1){
+    font-size: 3rem;
+}
+.ask-a-librarian-form-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 55%;
     border-radius: 0.5em;
     padding: 2em;
     margin: auto;
@@ -48,7 +53,10 @@
     background-color: var(--footer-primary);
     font-size: 1.4rem;
 }
-input,textarea{
+.ask-a-librarian-form-label{
+    font-family: var(--primary-font);
+}
+.ask-a-librarian-form-input{
     width: 100%;
     padding: 1em;
     font-family: var(--blueblock-font);
@@ -58,10 +66,18 @@ input,textarea{
     margin-bottom: 16px;
     resize: vertical;
 }
-textarea{
+.ask-a-librarian-form-text-area{
     height:200px;
+    width: 100%;
+    padding: 1em;
+    font-family: var(--blueblock-font);
+    border: 1px solid var(--footer-primary);
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
 }
-button {
+.ask-a-librarian-form-submit-btn{
     font-family: var(--secondary-font);
     font-size: 0.9rem;
     background-color: var(--secondary-blue);
@@ -72,9 +88,42 @@ button {
     cursor: pointer;
     width: 6em !important;
 }
-button:hover {
+.ask-a-librarian-form-submit-btn:hover{
     font-weight: 600;
     background-color: var(--secondary-color);
     color: var(--primary-black);
     transition: all .1s;
+}
+@media (max-width: 1160px){
+    
+}
+@media(max-width: 890px){
+    .blueblock-container{
+        width: 250px;
+        height: 70px;
+        top: 18em;
+    }
+    .blueblock-text{
+        font-size: 1.6rem;
+        padding-left: 1em;
+        padding-top: 0.4em;
+    } 
+    .ask-a-librarian-header-image img{
+        height: 300px;
+    }
+    .ask-a-librarian-header{
+        font-size: 1.6rem;
+        margin-top: 2em;
+    }
+    .ask-a-librarian-header p{
+        text-align: center;
+    }
+    .ask-a-librarian-form-container{
+        width: 90%;
+    }
+}
+@media(max-width: 600px){
+    .blueblock-container{
+        margin-left: 30px;
+    }
 }

@@ -15,7 +15,7 @@
 <section id="ask-a-librarian">
     <div class="ask-a-librarian-wrapper">
         <div class="ask-a-librarian-header-image">
-            <img src="/images/home/slideshow-images/img3.jpg">
+            <img src="/images/ask-a-librarian/header-image.jpg">
         </div>
         <div class="blueblock-wrapper">
             <div class="blueblock-container">
@@ -27,23 +27,24 @@
     </div>
 </section>
 <div class="ask-a-librarian-header">
-    <p>Ask your query to a librarian.</p>
+    <p>Ask your query</p>
+    <p>to a librarian.</p>
 </div>
-<div class="container">
-  <form action="/action_page.php">
-    <label for="name">Name</label>
-    <input type="text" id="userName" name="name" placeholder="Your name.." required>
+<div class="ask-a-librarian-form-container">
+  <form class="ask-a-librarian-form">
+    {{!-- <label class="ask-a-librarian-form-label" for="name">Name</label> --}}
+    <input class="ask-a-librarian-form-input" type="text" id="userName" name="name" placeholder="Your name.." required>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="Your email.." required>
+    {{!-- <label class="ask-a-librarian-form-label" for="email">Email</label> --}}
+    <input  class="ask-a-librarian-form-input" type="email" id="email" name="email" placeholder="Your email.." required>
 
-    <label for="name">Staff Name</label>
-    <input type="name" id="staffName" name="name" placeholder="Staff name.." required>
+    {{!-- <label class="ask-a-librarian-form-label" for="name">Staff Name</label> --}}
+    <input  class="ask-a-librarian-form-input" type="name" id="staffName" name="name" placeholder="Staff name.." required>
     
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Your subject.." required></textarea>
+    {{!-- <label class="ask-a-librarian-form-label" for="subject">Subject</label> --}}
+    <textarea  class="ask-a-librarian-form-text-area" id="subject" name="subject" placeholder="Type your message here.." required></textarea>
 
-    <button type="submit">Submit</button>
+    <button class="ask-a-librarian-form-submit-btn" type="submit">Submit</button>
   </form>
 </div>
 {{>footer}}
