@@ -7,6 +7,22 @@ function navLoad(){
   navProgressBar.style.opacity="1";
 }
 
+//nav-progress animation
+window.onscroll = function() {navProgress()};
+function navProgress() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.querySelector(".progress-bar").style.width = scrolled + "%";
+}
+
+//nav-active animation
+document.querySelectorAll('nav a').forEach(link => {
+  if(link.href === window.location.href){
+    link.classList.add('active');
+  }
+});
+
 //nav-bar hamburger-icon animation
 const hamburger = document.querySelector('.hamburger');
 const navbar = document.querySelector('.navbar-list');
@@ -45,22 +61,5 @@ window.addEventListener("scroll", () => {
   }
   else {
     scrollToTop.classList.remove('active');
-  }
-});
-
-
-//nav-progress animation
-window.onscroll = function() {navProgress()};
-function navProgress() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.querySelector(".progress-bar").style.width = scrolled + "%";
-}
-
-//nav-active animation
-document.querySelectorAll('nav a').forEach(link => {
-  if(link.href === window.location.href){
-    link.classList.add('active');
   }
 });

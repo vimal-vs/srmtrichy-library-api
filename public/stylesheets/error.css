@@ -1,0 +1,20 @@
+@import url("variables.css");
+
+.error-container{
+    display: flex;
+    flex-direction: column;
+    margin: 15em 10em 15em 5em;
+}
+.error-header{
+    font-family: var(--primary-font);
+    line-height: 3em;
+    font-size: 1.8rem;
+}
+.error-text{
+    font-family: var(--primary-font);
+    line-height: 3em;
+    font-size: 1.4rem;
+}
+.error-text a{
+    color: black;
+}
