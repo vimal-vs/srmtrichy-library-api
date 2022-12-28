@@ -117,10 +117,11 @@
       font-size: 0.8rem;
   }
   .end-container{
-    padding: 1em;
+    padding: 0.5em;
   }
-  .end-wrapper{
-    justify-content: space-between;
+  .end-quick-links{
+    padding: 1em;
+    padding-top: 1.4em;
   }
   .end-quick-links ul li a{
     font-size: 0.8rem;
@@ -147,5 +148,16 @@
   }
   .scroll-to-top i:hover{
     font-size: 1.2rem;
+  }
+}
+@media(max-width: 300px){
+  .end-address-text p{
+    font-size: 0.7rem;
+  }
+  .end-address-text a{
+    font-size: 0.7rem;
+  }
+  .end-address-logo img{
+    height: 3em;
   }
 }
