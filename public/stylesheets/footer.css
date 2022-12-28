@@ -83,6 +83,7 @@
   position: fixed;
   opacity: 0;
   font-size: 1.3rem;
+  pointer-events: none;
   text-decoration: none;
 }
 .scroll-to-top i{
