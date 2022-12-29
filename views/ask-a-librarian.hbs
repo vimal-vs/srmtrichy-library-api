@@ -31,7 +31,7 @@
     <p>to a librarian<i>.</i></p>
 </div>
 <div class="ask-a-librarian-form-container">
-  <form class="ask-a-librarian-form">
+  <form class="ask-a-librarian-form" id="ask-a-librarian-form">
     {{!-- <label class="ask-a-librarian-form-label" for="name">Name</label> --}}
     <input class="ask-a-librarian-form-input" type="text" id="userName" name="name" placeholder="Your name.." required>
 
@@ -44,12 +44,14 @@
     {{!-- <label class="ask-a-librarian-form-label" for="subject">Subject</label> --}}
     <textarea  class="ask-a-librarian-form-text-area" id="subject" name="subject" placeholder="Type your message here.." required></textarea>
 
-    <button class="ask-a-librarian-form-submit-btn" type="submit">Submit</button>
+    <button class="ask-a-librarian-form-submit-btn" type="submit" onsubmit=sendMail()>Submit</button>
   </form>
 </div>
 {{>footer}}
     
 <script src="/javascripts/default.js"></script>
+<script src="/javascripts/ask-a-librarian.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 
 </body>
 </html>
