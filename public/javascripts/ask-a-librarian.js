@@ -5,7 +5,7 @@ function sendMail(){
         Host : "smtp.elasticemail.com",
         Username : "passgen.pybot@gmail.com",
         Password : "5F2A4A21A5273FE9A98F4626313BECF4E21D",
-        To : "chieflibrarian@ist.srmtrichy.edu.in",
+        To : "librarian@ist.srmtrichy.edu.in",
         From : "passgen.pybot@gmail.com",
         Subject : document.getElementById("email").value,
         Body : document.getElementById("subject").value,
