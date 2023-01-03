@@ -4,9 +4,12 @@
 /*work-sans medium-500*/
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
 
+/*source-sans-pro reguler-400*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 :root{
     --primary-font:'Work Sans';
     --secondary-font:'Poppins';
+    --text-font: 'Source Sans Pro';
     --primary-black:#000;
     --secondary-black:#292929;
     --primary-white:#fff;

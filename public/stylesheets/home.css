@@ -21,15 +21,16 @@
 .slideshow-dots{
   display: flex;
   justify-content: center;
-  transform: translateY(-2em);
+  position: relative;
+  top: -2em;
 }
 .dots{
   display: flex;
   justify-content: center;
 }
 .dot{
-  height: 8px;
-  width: 8px;
+  height: 6px;
+  width: 6px;
   border-radius: 50%;
   cursor: pointer;
   margin: 10px;
@@ -37,6 +38,19 @@
 }
 .dot.active{
   background-color: var(--secondary-yellow);
+}
+/*
+.slideshow-text{
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-family: Butler !important;
+  top: -4em;
+  font-size: 5rem;
+  color: white;
+}*/
+.slideshow-text p{
+  margin: auto;
 }
 .blueblock-container{
   position:absolute;
@@ -69,7 +83,7 @@
   align-self: center;
   cursor: default;
 }
-.library-quote-container{
+.home-library-quote{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,13 +121,14 @@
 .library-text{
   max-width: 400px;
   font-size: 1rem;
-  font-family: var(--secondary-font);
 }
 .library-text h1{
   font-size: 2.6rem;
+  font-family: var(--secondary-font);
 }
 .library-text p{
   margin-top: 1em;
+  font-family: var(--secondary-font);
 }
 .library-image{
   margin-left: 5em;
@@ -127,19 +142,20 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: center;
-  margin-top: 10em;
+  margin-top: 6em;
 }
 .digital-library-text{
   max-width: 400px;
   font-size: 1rem;
   margin-left: 5em;
-  font-family: var(--secondary-font);
 }
 .digital-library-text h1{
   font-size: 2.6rem;
+  font-family: var(--secondary-font);
 }
 .digital-library-text p{
   margin-top: 1em;
+  font-family: var(--secondary-font);
 }
 .digital-library-list{
   display: flex;
@@ -170,22 +186,91 @@
   animation-name: slideIn;
   animation-duration: 1s;  
 }
-.working-hours-container{
+.home-working-hours{
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
   font-family: var(--secondary-font);
-  margin-top: 6em;
-  margin-bottom: 6em;
+  margin-top: 5em;
+  padding: 1em;
 }
 .working-hours-text h1{
   font-size: 2.6rem;
+  text-align: center;
 }
 .working-hours-text p{
-  margin-top: 2em;
-  max-width: 400px;
+  margin-top: 1.5em;
+  text-align: center;
+  max-width: 50vw;
 }
-.working-hours-image img{
-  margin-left: 10em;
+.working-hours-block{
+  display: flex;
+  margin-top: 2em;
+  color: #fff;
+}
+.working-hours-block-weekdays,.working-hours-block-weekend{
+  padding: 2em;
+  width: 350px;
+  height: 320px;
+}
+.working-hours-block-weekdays{
+  background-color: #4f5fcd;
+}
+.working-hours-block-weekend{
+  background-color: #4d89e3;
+}
+.working-hours-weekdays-header h3,.working-hours-weekend-header h3{
+  margin-top: 0.8em;
+}
+.working-hours-weekdays-header i,.working-hours-weekend-header i{
+  font-size: 2.2rem;
+}
+.working-hours-weekdays-text{
+  margin-top: 2em;
+}
+.working-hours-weekend-text{
+  margin-top: 4em;
+}
+.working-hours-transactions{
+  margin-top: 2em;
+}
+#library-services{
+  margin-top: 5em;
+  padding: 1em;
+  font-family: var(--primary-font);
+}
+.library-services-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+.library-services-header{
+  border-bottom: 1px solid var(--secondary-yellow);
+}
+.library-services-text{
+  padding-top: 1.5em;
+  width: 50%;
+  line-height: 1.6em;
+}
+.library-services-list-wrapper{
+  display: flex;
+}
+.library-services-list{
+  width: 50%;
+}
+.library-services-list ul{
+  padding-top: 1em;
+}
+.library-services-list ul li{
+  line-height: 2.4em;
+}
+.library-services-list ul li i{
+  display: none;
+}
+.fa-chevron-right{
+  font-size: 0.8rem;
 }
 /*end of home-content*/
 
@@ -260,26 +345,22 @@
     width: 370px;
     height: 220px;
   }
-  .working-hours-container{
+  .home-working-hours{
+    margin-top: 1em;
+  }
+  .working-hours-block{
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2em;
-    margin-bottom: 4em;
+  }
+  .working-hours-text{
     padding: 1em;
   }
   .working-hours-text h1{
-    font-size: 2.6rem;
+    text-align: unset;
   }
   .working-hours-text p{
-    margin-top: 1em;
+    text-align: unset;
+    max-width: none;
     font-size: 0.8rem;
-  }
-  .working-hours-image img{
-    width: 370px;
-    height: 220px;
-    margin-left: 0;
-    padding-top: 2em;
   }
 }
 /*end of media queries -> MOBILE DEVICES*/
@@ -327,11 +408,5 @@
   .working-hours-text p{
     margin-top: 1em;
     font-size: 0.8rem;
-  }
-  .working-hours-image img{
-    width: 550px;
-    height: 300px;
-    margin-left: 2em;
-    padding-top: 0;
   }
 }

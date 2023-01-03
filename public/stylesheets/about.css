@@ -45,45 +45,57 @@
   color: var(--primary-black);
 }
 #vision-mission{
-  font-family: var(--primary-font);
-}
-.vision-wrapper,.mission-wrapper{
-  padding: 2em;
-  margin: auto;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 60%;
+  margin-top: 4em;
+}
+.vision-mission-container{
+  background-color: var(--secondary-yellow);
+  padding: 3em;
+  align-items: center;
+}
+.vision-mission-image{
+  position: relative;
+  left: -2em;
+}
+.vision-mission-image img{
+  height: 600px;
+  width: 500px;
+  object-fit: cover;
+  transition: width 1s;
+}
+.vision-wrapper,.mission-wrapper{
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  padding: 1em;
 }
 .vision-header,.mission-header{
-  font-family: var(--secondary-font);
+  font-family: var(--primary-font);
   border-bottom: 1px solid var(--secondary-yellow);
 }
-.vision-list ul,.mission-list ul{
-  list-style: none;
-}
-.vision-list ul li{
-  padding-top: 2em;
-  font-size: 1rem;
-  word-spacing: 0.1em;
-  line-height: 1.2em;
-}
-.mission-list ul li{
-  padding-top: 1.6em;
-  font-size: 1rem;
+.vision-list ul li,.mission-list ul li{
+  padding-top: 1em;
   word-spacing: 0.1em;
   line-height: 1.4em;
+  font-family: var(--primary-font);
+  list-style: none;
+}
+.vision-list ul li i,.mission-list ul li i{
+  display: inline;
 }
 #library-services{
-  margin: 1em;
+  margin-top: 4em;
+  padding: 1em;
   font-family: var(--primary-font);
+  background-color: var(--footer-primary);
 }
 .library-services-wrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2em;
+  padding: 1em;
 }
 .library-services-header{
   border-bottom: 1px solid var(--secondary-yellow);
@@ -93,6 +105,9 @@
   width: 50%;
   line-height: 1.6em;
 }
+.library-services-list-wrapper{
+  display: flex;
+}
 .library-services-list{
   width: 50%;
 }
@@ -101,15 +116,12 @@
 }
 .library-services-list ul li{
   line-height: 2.4em;
-  list-style: none;
+}
+.library-services-list ul li i{
+  display: none;
 }
 .fa-chevron-right{
   font-size: 0.8rem;
-}
-.library-services-list ul li:hover{
-  padding-left: 0.3em;
-  cursor: pointer;
-  transition: padding-left 0.2s;
 }
 #resources{
   font-family: var(--primary-font);

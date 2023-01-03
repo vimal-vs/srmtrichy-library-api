@@ -121,6 +121,8 @@
 }
 .resource:hover{
     transform: translateY(-1rem);
+    box-shadow: 0.2em 0.2em 0.2em var(--footer-primary);
+    transition: all 0.4s;
 }
 .resource:hover~.resource{
     transform: translateX(150px);
@@ -156,6 +158,8 @@
 .resource-content-image img{
     margin-top: 2em;
     cursor: pointer;
+    max-height: 100px;
+    max-width: 250px;
 }
 /*end of resource content*/
 

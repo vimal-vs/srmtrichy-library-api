@@ -38,10 +38,6 @@
 .remote-access-text p{
     padding-top: 2em;
 }
-.remote-access-text p:hover{
-    transform: translateX(0.1em);
-    transition: all 0.2s;
-}
 .remote-access-timer-wrapper{
     display: flex;
 }
