@@ -60,8 +60,8 @@
   left: -2em;
 }
 .vision-mission-image img{
-  height: 600px;
-  width: 500px;
+  height: 500px;
+  width: 400px;
   object-fit: cover;
   transition: width 1s;
 }
