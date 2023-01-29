@@ -39,3 +39,8 @@ function updateImages(){
   dots.forEach(item => item.classList.remove('active'));
   dots[slideIndex].classList.add('active');
 }
+
+const quickLinks = document.querySelector('.quick-links-button');
+quickLinks.addEventListener('click',() => {
+  window.location.reload();
+});
