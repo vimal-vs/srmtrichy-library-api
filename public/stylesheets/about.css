@@ -88,8 +88,6 @@
 #library-services{
   margin-top: 4em;
   padding: 1em;
-  font-family: var(--primary-font);
-  background-color: var(--footer-primary);
 }
 .library-services-wrapper{
   display: flex;
@@ -98,12 +96,17 @@
   padding: 1em;
 }
 .library-services-header{
-  border-bottom: 1px solid var(--secondary-yellow);
+  border-bottom: 2px solid var(--secondary-yellow);
+  font-family: var(--primary-font);
+}
+.library-services-header h1{
+  margin-bottom: 0.35em;
 }
 .library-services-text{
   padding-top: 1.5em;
   width: 50%;
   line-height: 1.6em;
+  font-family: var(--primary-font);
 }
 .library-services-list-wrapper{
   display: flex;
@@ -115,6 +118,7 @@
   padding-top: 1em;
 }
 .library-services-list ul li{
+  font-family: var(--primary-font);
   line-height: 2.4em;
 }
 .library-services-list ul li i{
@@ -134,7 +138,10 @@
   align-items: center;
 }
 .resources-header{
-  border-bottom: 1px solid var(--secondary-yellow);
+  border-bottom: 2px solid var(--secondary-yellow);
+}
+.resources-header h1{
+  margin-bottom: 0.35em;
 }
 .resources-text{
   padding-top: 1.5em;
@@ -157,6 +164,9 @@ td, th {
   text-align: center;
   padding: 8px;
 }
+td:hover{
+  background-color: var(--footer-primary);
+}
 .resources-wrapper{
   margin-top: 2em;
 }
@@ -171,7 +181,10 @@ td, th {
   align-items: center;
 }
 .membership-details-header{
-  border-bottom: 1px solid var(--secondary-yellow);
+  border-bottom: 2px solid var(--secondary-yellow);
+}
+.membership-details-header h1{
+  margin-bottom: 0.35em;
 }
 .membership-details-text{
   padding-top: 1.5em;

@@ -2,7 +2,7 @@
 const images = document.querySelectorAll('.slides img');
 const dots = document.querySelector('.dots');
 
-let timeOut = 5000;
+let timeOut = 4000;
 let slideIndex = 0;
 let intervalId;
 
