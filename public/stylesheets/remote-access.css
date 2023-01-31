@@ -1,7 +1,10 @@
 @import url("variables.css");
 
 p{
-    font-size: 1rem;
-    padding: 0.5em;
+    font-size: 1.4rem;
+    padding: 1.4em;
     font-family: var(--primary-font);
+}
+p a{
+    font-style: italic;
 }

@@ -87,7 +87,6 @@
 }
 #library-services{
   margin-top: 4em;
-  padding: 1em;
 }
 .library-services-wrapper{
   display: flex;
@@ -120,9 +119,7 @@
 .library-services-list ul li{
   font-family: var(--primary-font);
   line-height: 2.4em;
-}
-.library-services-list ul li i{
-  display: none;
+  list-style: none;
 }
 .fa-chevron-right{
   font-size: 0.8rem;
@@ -158,11 +155,12 @@ table {
 th{
   background-color: var(--secondary-blue);
   color: var(--primary-white);
+  font-weight: 400;
 }
 td, th {
   border: 1px solid black;
   text-align: center;
-  padding: 8px;
+  padding: 1em;
 }
 td:hover{
   background-color: var(--footer-primary);
