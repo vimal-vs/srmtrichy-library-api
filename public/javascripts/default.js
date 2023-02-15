@@ -72,7 +72,6 @@ window.addEventListener("scroll", () => {
 const scrollToTopButton = document.querySelector('.scroll-to-top i').addEventListener("click",() => {
   document.documentElement.scrollTo({ 
     top: 0,
-    behavior: "smooth"
   });
 });
   
