@@ -40,7 +40,7 @@ function updateImages(){
   dots[slideIndex].classList.add('active');
 }
 
-const quickLinks = document.querySelector('.quick-links-button');
-quickLinks.addEventListener('click',() => {
-  window.location.reload();
-});
+// const quickLinks = document.querySelector('.quick-links-button');
+// quickLinks.addEventListener('click',() => {
+//   window.location.reload();
+// });

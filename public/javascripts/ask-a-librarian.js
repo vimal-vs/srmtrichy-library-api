@@ -4,8 +4,8 @@ function sendMail(){
     Email.send({
         Host : "smtp.elasticemail.com",
         Username : "passgen.pybot@gmail.com",
-        Password : "",
-        To : "librarian@ist.srmtrichy.edu.in",
+        Password : "rkceuqitrzntjsee",
+        To : "vimalchan24@gmail.com",
         From : "passgen.pybot@gmail.com",
         Subject : document.getElementById("email").value,
         Body : document.getElementById("subject").value,
