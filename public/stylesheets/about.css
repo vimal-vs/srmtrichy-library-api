@@ -87,6 +87,9 @@
 }
 #library-services{
   margin-top: 4em;
+  padding: 1em;
+  font-family: var(--primary-font);
+  background-color: var(--footer-primary);
 }
 .library-services-wrapper{
   display: flex;
@@ -95,17 +98,12 @@
   padding: 1em;
 }
 .library-services-header{
-  border-bottom: 2px solid var(--secondary-yellow);
-  font-family: var(--primary-font);
-}
-.library-services-header h1{
-  margin-bottom: 0.35em;
+  border-bottom: 1px solid var(--secondary-yellow);
 }
 .library-services-text{
   padding-top: 1.5em;
   width: 50%;
   line-height: 1.6em;
-  font-family: var(--primary-font);
 }
 .library-services-list-wrapper{
   display: flex;
@@ -117,9 +115,10 @@
   padding-top: 1em;
 }
 .library-services-list ul li{
-  font-family: var(--primary-font);
   line-height: 2.4em;
-  list-style: none;
+}
+.library-services-list ul li i{
+  display: none;
 }
 .fa-chevron-right{
   font-size: 0.8rem;
@@ -135,10 +134,7 @@
   align-items: center;
 }
 .resources-header{
-  border-bottom: 2px solid var(--secondary-yellow);
-}
-.resources-header h1{
-  margin-bottom: 0.35em;
+  border-bottom: 1px solid var(--secondary-yellow);
 }
 .resources-text{
   padding-top: 1.5em;
@@ -155,15 +151,11 @@ table {
 th{
   background-color: var(--secondary-blue);
   color: var(--primary-white);
-  font-weight: 400;
 }
 td, th {
   border: 1px solid black;
   text-align: center;
-  padding: 1em;
-}
-td:hover{
-  background-color: var(--footer-primary);
+  padding: 8px;
 }
 .resources-wrapper{
   margin-top: 2em;
@@ -179,10 +171,7 @@ td:hover{
   align-items: center;
 }
 .membership-details-header{
-  border-bottom: 2px solid var(--secondary-yellow);
-}
-.membership-details-header h1{
-  margin-bottom: 0.35em;
+  border-bottom: 1px solid var(--secondary-yellow);
 }
 .membership-details-text{
   padding-top: 1.5em;
