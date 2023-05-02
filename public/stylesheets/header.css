@@ -2,7 +2,7 @@
 
 body::-webkit-scrollbar{
   width: 12px;
-  height: 12px;
+  height: 10px;
 }
 body::-webkit-scrollbar-thumb{
   background: rgb(127, 127, 148);
