@@ -29,9 +29,13 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 @keyframes fadeIn{
     from{
-        opacity : .5
+        opacity : .8
     }
     to{
         opacity : 1

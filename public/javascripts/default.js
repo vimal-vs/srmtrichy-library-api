@@ -42,7 +42,7 @@ document.querySelectorAll('.navbar-list').forEach(n => n.addEventListener('click
 
 
 //slide-in on-scroll animation
-const observer = new IntersectionObserver((entries) => {
+const observer = new IntersectionObserver((entries) =>{
   entries.forEach((entry) => {
     if (entry.isIntersecting){
       entry.target.classList.add('active');
@@ -56,7 +56,7 @@ hiddenElements.forEach((element) => observer.observe(element));
 hiddenElements2.forEach((element) => observer.observe(element));
 
 
-//scroll-to-top button animation
+//scroll-to-top animation
 const scrollToTop = document.querySelector(".scroll-to-top");
 window.addEventListener("scroll", () => {
   if (window.scrollY > 500){
@@ -68,10 +68,4 @@ window.addEventListener("scroll", () => {
 });
 
 
-//scroll-to-top
-const scrollToTopButton = document.querySelector('.scroll-to-top i').addEventListener("click",() => {
-  document.documentElement.scrollTo({ 
-    top: 0,
-  });
-});
-  
+//disable scroll on active-hamburger

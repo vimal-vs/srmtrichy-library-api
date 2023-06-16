@@ -2,7 +2,7 @@
 const images = document.querySelectorAll('.slides img');
 const dots = document.querySelector('.dots');
 
-let timeOut = 4000;
+let timeOut = 5000;
 let slideIndex = 0;
 let intervalId;
 
@@ -39,8 +39,3 @@ function updateImages(){
   dots.forEach(item => item.classList.remove('active'));
   dots[slideIndex].classList.add('active');
 }
-
-// const quickLinks = document.querySelector('.quick-links-button');
-// quickLinks.addEventListener('click',() => {
-//   window.location.reload();
-// });
