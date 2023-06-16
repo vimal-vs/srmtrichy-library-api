@@ -13,7 +13,6 @@ var usersRouter = require('./routes/users');
 
 var app = express();
 
-var app = require('../server');
 var debug = require('debug')('library:server');
 var http = require('http');
 
