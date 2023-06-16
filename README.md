@@ -3,8 +3,8 @@
 **Web App developed on request of [SRM-IST, Tiruchirappalli](https://srmtrichy.edu.in/)**
 
 
-- In the offical website, they have the `library section` under the About -> Infrastructure -> Library.
-- The section is a static page & lacking some additional informations about the library.
+- In the offical website, they have the `library section` under: About -> Infrastructure -> Library.
+- The section contains a static page and lacks some additional information about the library.
 - This is how it looks:
 
   
@@ -13,7 +13,7 @@
 
 
 - So, I created a dedicated web app for the library, using ExpressJS, Hbs, NodeJS.
-- And temporarily hosted on Vercel.
+- And temporarily hosted on [Vercel](https://vercel.com/).
 - This is how they wanted it to be:
 
 
